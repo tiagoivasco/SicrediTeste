@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- HOME FRAGMENT -->
+    <dimen name="margin_top">8dp</dimen>
+    <dimen name="layout_height">0dp</dimen>
+
+    <!-- RVIEW -->
+    <dimen name="image_layout_width">407dp</dimen>
+    <dimen name="image_layout_height">150dp</dimen>
+    <dimen name="image_margin_top">8dp</dimen>
+    <dimen name="event_name_text_size">18sp</dimen>
+    <dimen name="label_data_margin_start">8dp</dimen>
+    <dimen name="label_data_margin_bottom">8dp</dimen>
+    <dimen name="txt_date_margin_bottom">8dp</dimen>
+    <dimen name="txt_price_margin_bottom">8dp</dimen>
+
+    <!-- EVENT DETAIL FRAGMENT -->
+    <dimen name="event_image_margin_top">24dp</dimen>
+    <dimen name="event_name_margin_top">8dp</dimen>
+    <dimen name="txt_date_text_size">14sp</dimen>
+    <dimen name="txt_price_text_size">14sp</dimen>
+    <dimen name="txt_price_margin_top">24dp</dimen>
+    <dimen name="event_description_margin_top">16dp</dimen>
+    <dimen name="event_description_margin_start">16dp</dimen>
+    <dimen name="event_description_margin_end">16dp</dimen>
+    <dimen name="btn_checkin_margin_start">68dp</dimen>
+    <dimen name="btn_checkin_margin_top">16dp</dimen>
+    <dimen name="btn_share_margin_top">16dp</dimen>
+    <dimen name="map_height">200dp</dimen>
+    <dimen name="map_margin_top">8dp</dimen>
+
+
+</resources>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SicrediTeste</string>
+    <string name="apiKeyMaps">AIzaSyCkIU9cwvgnEgUGkU51adVb1uBTO_4Jh54</string>
+    <string name="label_price">Valor:</string>
+    <string name="label_event_details">Detalhes do evento</string>
+    <string name="txt_preco">Valor: %1s</string>
+    <string name="label_checkIn_toolbar">Realizar Check-in</string>
+    <string name="label_name">Nome</string>
+    <string name="label_email">Email</string>
+    <string name="btn_checkin">Realizar Check-in</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_check_in">Check-In</string>
+    <string name="label_date">Data: </string>
+    <string name="txt_event_title">Titulo atividade</string>
+
+    <string name="shareBody">Your body here</string>
+    <string name="shareSub">Your subject here</string>
+    <string name="sharingIntentType">text/plain</string>
+    <string name="shareTitle">Share using</string>
+
+    <string name="sucess">Sucesso</string>
+    <string name="error">Erro</string>
+    <string name="checkinSucess">Check-in realizado com sucesso.</string>
+    <string name="checkinError">Erro ao realizar checkin.\nTente novamente mais tarde.</string>
+
+</resources>

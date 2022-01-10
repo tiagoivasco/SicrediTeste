@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.EventDetailsFragment"
+    android:background="@color/grey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/eventImageDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/event_image_margin_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/txtEventName"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/event_name_margin_top"
+            android:textColor="@color/black"
+            android:textSize="@dimen/event_name_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/eventImageDetails"
+            app:layout_constraintStart_toStartOf="@+id/eventImageDetails"
+            app:layout_constraintTop_toBottomOf="@+id/eventImageDetails"
+            tools:text="Nome Evento" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_date_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/txtPrice"
+            app:layout_constraintEnd_toEndOf="@+id/txtEventName"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="@+id/txtEventName"
+            app:layout_constraintTop_toBottomOf="@+id/txtEventName"
+            tools:text="28/02/2019" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/txt_price_margin_top"
+            android:text="@string/txt_preco"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_price_text_size"
+            app:layout_constraintEnd_toEndOf="@+id/txtEventName"
+            app:layout_constraintHorizontal_bias="0.481"
+            app:layout_constraintStart_toStartOf="@+id/txtEventName"
+            app:layout_constraintTop_toBottomOf="@+id/txtEventName" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnShare">
+
+            <TextView
+                android:id="@+id/txtEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/event_description_margin_start"
+                android:layout_marginTop="@dimen/event_description_margin_top"
+                android:layout_marginEnd="@dimen/event_description_margin_end"
+                android:gravity="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="descricao aqui\n bem grande aious \n asda \n asdas \n asdas \n" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnCheckIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/btn_checkin_margin_start"
+            android:layout_marginTop="@dimen/btn_checkin_margin_top"
+            android:backgroundTint="@color/white"
+            android:text="@string/btn_check_in"
+            android:textColor="@color/grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/btn_share_margin_top"
+            android:backgroundTint="@color/white"
+            android:text="@string/btn_share"
+            android:textColor="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.453"
+            app:layout_constraintStart_toEndOf="@+id/btnCheckIn"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrice" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/map_height"
+            android:layout_marginTop="@dimen/map_margin_top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            tools:context=".MapsActivity" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
